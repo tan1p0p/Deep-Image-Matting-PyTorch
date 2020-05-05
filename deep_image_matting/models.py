@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torchsummary import summary
 
-from config import device, im_size
+from deep_image_matting.config import device, im_size
 
 
 class conv2DBatchNormRelu(nn.Module):

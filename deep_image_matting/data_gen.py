@@ -8,8 +8,8 @@ import torch
 from torch.utils.data import Dataset
 from torchvision import transforms
 
-from config import im_size, unknown_code, fg_path, bg_path, a_path, num_valid
-from utils import safe_crop
+from deep_image_matting.config import im_size, unknown_code, fg_path, bg_path, a_path, num_valid
+from deep_image_matting.utils import safe_crop
 
 # Data augmentation and normalization for training
 # Just normalization for validation

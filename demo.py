@@ -7,10 +7,10 @@ import numpy as np
 import torch
 from torchvision import transforms
 
-from config import device, fg_path_test, a_path_test, bg_path_test
-from data_gen import data_transforms, gen_trimap, fg_test_files, bg_test_files
+from deep_image_matting.config import device, fg_path_test, a_path_test, bg_path_test
+from deep_image_matting.data_gen import data_transforms, gen_trimap, fg_test_files, bg_test_files
+from deep_image_matting.utils import compute_mse, compute_sad, ensure_folder, draw_str
 from test import gen_test_names
-from utils import compute_mse, compute_sad, ensure_folder, draw_str
 
 
 def composite4(fg, bg, a, w, h):
