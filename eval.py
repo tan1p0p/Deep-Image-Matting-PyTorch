@@ -6,9 +6,9 @@ import torch
 from torchvision import transforms
 from tqdm import tqdm
 
-from deep_image_matting.config import device
-from deep_image_matting.data_gen import data_transforms
-from deep_image_matting.utils import ensure_folder
+from config import device
+from data_gen import data_transforms
+from utils import ensure_folder
 
 IMG_FOLDER = 'data/alphamatting/input_lowres'
 TRIMAP_FOLDERS = ['data/alphamatting/trimap_lowres/Trimap1', 'data/alphamatting/trimap_lowres/Trimap2',

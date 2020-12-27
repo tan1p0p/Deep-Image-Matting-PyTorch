@@ -6,7 +6,7 @@ import cv2 as cv
 import numpy as np
 import torch
 
-from deep_image_matting.config import im_size, epsilon, epsilon_sqr
+from config import im_size, epsilon, epsilon_sqr
 
 
 def clip_gradient(optimizer, grad_clip):

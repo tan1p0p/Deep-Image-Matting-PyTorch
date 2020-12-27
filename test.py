@@ -6,9 +6,9 @@ import torch
 from torchvision import transforms
 from tqdm import tqdm
 
-from deep_image_matting.config import device, fg_path_test, a_path_test, bg_path_test
-from deep_image_matting.data_gen import data_transforms, fg_test_files, bg_test_files
-from deep_image_matting.utils import compute_mse, compute_sad, AverageMeter, get_logger
+from config import device, fg_path_test, a_path_test, bg_path_test
+from data_gen import data_transforms, fg_test_files, bg_test_files
+from utils import compute_mse, compute_sad, AverageMeter, get_logger
 
 
 def gen_test_names():

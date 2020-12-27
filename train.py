@@ -3,10 +3,10 @@ import torch
 from tensorboardX import SummaryWriter
 from torch import nn
 
-from deep_image_matting.config import device, im_size, grad_clip, print_freq
-from deep_image_matting.data_gen import DIMDataset
-from deep_image_matting.models import DIMModel
-from deep_image_matting.utils import parse_args, save_checkpoint, AverageMeter, clip_gradient, get_logger, get_learning_rate, \
+from config import device, im_size, grad_clip, print_freq
+from data_gen import DIMDataset
+from models import DIMModel
+from utils import parse_args, save_checkpoint, AverageMeter, clip_gradient, get_logger, get_learning_rate, \
     alpha_prediction_loss, adjust_learning_rate
 
 
